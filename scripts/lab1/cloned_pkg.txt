@@ -1,0 +1,31 @@
+	broken_script.py is a script that counts fibonacci numbers 
+but it got a problem (thats why its called broken haha)
+it should have "in" instead of "on" so it could iterate over a list
+
+
+
+	hack_secret_data.py is a script that contains a function show_progress 
+which basically draws a dot every second for a total of 6 dots. 
+This script shows a prompt of trying to hack into some secret data storage 
+with showing the progress (calling show_progress function) giving a prompt that we failed, giving another try and actually breaking in this time.
+The script ends with a line that shows u the time that programm was running for 
+(26 seconds in our case)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

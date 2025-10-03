@@ -1,0 +1,13 @@
+ 	-There are lots of types in std_msg pckg like:
+ bool, byte, char, intxxx, floatxxx, empty, uintxxx, etc.
+I got access to these by using rosmsg list | grep std_msgs
+
+
+
+ 	-YES.. There can be multiple publishers within the same topic..
+It can be pretty messy but it works. In this case subscriber of the
+topic catches all of the messages they publish.
+
+
+	-rospy.spin() holds the process until the ROS is closed or node is interrupted.
+	rospy.is_shutdown() is used when the programm need to do something else besides just cathcing messages.

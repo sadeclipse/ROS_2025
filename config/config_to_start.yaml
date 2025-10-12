@@ -1,0 +1,14 @@
+params_study:
+  ros_priv_param: Hi, I am private =)
+ros_glob_param: Hi, I am global =)
+ros_loc_param: Hi, I am local =)
+rosdistro: 'noetic
+
+  '
+roslaunch:
+  uris:
+    host_vbox__35971: http://vbox:35971/
+rosversion: '1.17.4
+
+  '
+run_id: a3142556-a6e3-11f0-b1e0-fb56c0b62723

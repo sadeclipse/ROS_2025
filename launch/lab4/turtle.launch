@@ -6,8 +6,6 @@
     <!-- Axes -->
     <param name="scale_linear" value="2" type="double"/>
     <param name="scale_angular" value="2" type="double"/>
-    <!-- Tf transofrm to add carrot -->
-    <node pkg="tf" type="static_transform_publisher" name="car_2_camera_tf" args="0.3 0 0 0 0 0 turtle1  carrot  100" />
     <!-- Add rviz -->
     <node pkg="rviz" type="rviz" name="rviz" />
 
@@ -20,6 +18,8 @@
         <param name="turtle_tf_name" type="string" value="turtle2" />
         <remap from="input_pose" to="turtle2/pose"/>
     </node>
+
+    <node name="carrot_tf_listener" pkg="super_alex_study_pkg" type="carrot_tf_listener.py" />
 
     <node name="turtle_pointer" pkg="super_alex_study_pkg" type="turtle_tf_listener.py" respawn="false" output="screen"/>
 </launch>

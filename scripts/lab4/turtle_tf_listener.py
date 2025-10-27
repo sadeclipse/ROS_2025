@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import rospy
-
 import math
 import tf
 from geometry_msgs.msg import Twist
@@ -9,7 +8,7 @@ import turtlesim.srv
 if __name__ == '__main__':
     rospy.init_node('tf_turtle')
 
-    listener = tf.TransformListener()
+    listener = tf.TransformListener() ## to read transformations between coordiante systems
 
     rospy.wait_for_service('spawn')
     spawner = rospy.ServiceProxy('spawn', turtlesim.srv.Spawn) ##to spawn with set coords, rotations and a name

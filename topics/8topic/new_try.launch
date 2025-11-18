@@ -1,0 +1,6 @@
+<launch>
+    <arg name="rviz" default="false" />
+    <include file="$(find super_alex_study_pkg)/topics/3topic/turtlebot3_world.launch" />
+    
+    <node if="$(arg rviz)" pkg="rviz" type="rviz" name="rviz" args="-d $(find super_alex_study_pkg)/rviz/sim_initial.rviz" />
+</launch>

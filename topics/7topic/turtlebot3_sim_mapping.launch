@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find super_alex_study_pkg)/topics/4topic/turtlebot3_sim_start.launch" />
+  <include file="$(find super_alex_study_pkg)/topics/7topic/turtlebot3_my_gmapping.launch" />
+
+</launch>
